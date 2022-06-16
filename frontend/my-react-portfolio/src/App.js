@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Switch,
+} from "react-router-dom";
+import { Contact, CTA, Footer, Navbar, Skills } from "./components";
+import { Blog, Header, Projects } from "./containers";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="top" className="App">
+      <Navbar />
+      <Header
+        fullname="damilola bada"
+        description="web developer & creative thinker"
+        aboutme="I am passionate about using various web development tools to create fun products that solve problems in various industries. Let's connect if you're looking for a creative mind to join your team."
+      />
+      <Skills />
+      <Projects />
+      <CTA />
+      <Blog />
+      <Contact />
+      <Footer />
     </div>
   );
 }
