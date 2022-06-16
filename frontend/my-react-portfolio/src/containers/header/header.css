@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .dami__header-content {
@@ -10,16 +12,15 @@
   flex: 1;
   justify-content: center;
   align-items: flex-start;
-  margin-right: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   flex-wrap: wrap;
   /* overflow: hidden; */
 }
 
 .dami__header-content_fullname {
   font-weight: 500;
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 2rem;
+  line-height: 2rem;
   color: var(--color-subtext);
   display: flex;
   align-items: center;
@@ -28,16 +29,17 @@
 }
 
 .dami__header-content_fullname div {
-  width: 102px;
+  width: 7rem;
   height: 0;
   margin-right: 2rem;
   background-color: var(--color-subtext);
   border: 1px solid var(--color-button);
 }
+
 .dami__header-content_description {
   font-weight: 700;
-  font-size: 52px;
-  line-height: 100px;
+  font-size: 3rem;
+  line-height: 6rem;
   color: #1f2937;
   text-transform: capitalize;
   margin: 1.5rem 0 2rem 0;
@@ -45,11 +47,11 @@
 
 .dami__header-content_description-aboutme {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.2rem;
+  line-height: 2rem;
   color: var(--color-text);
   margin-top: 1rem;
-  padding-right: 1rem;
+  padding-right: 2rem;
   width: 80%;
 }
 
@@ -66,22 +68,22 @@
   background-color: var(--color-button);
   color: #fff;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.2rem;
+  line-height: 2rem;
   border-radius: 6px;
   border: none;
   outline: none;
   cursor: pointer;
   margin-right: 2rem;
-  min-width: 131px;
-  min-height: 52px;
+  min-width: 8.2rem;
+  min-height: 3.2rem;
 }
 
 .dami__header-content__cta a {
   color: var(--color-button);
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.2rem;
+  line-height: 2rem;
   outline: none;
   cursor: pointer;
   text-decoration: underline;
@@ -93,7 +95,6 @@
 
 .dami__header-content__empty {
   width: 622px;
-  height: 0px;
   background: var(--color-text);
   border: 1px solid #e5e7eb;
   margin: 1.5rem 0 1rem 0;
@@ -101,8 +102,8 @@
 
 .dami__header-content__footer {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.8rem;
+  line-height: 1rem;
   color: var(--color-text);
 }
 .dami__header-image {
@@ -110,8 +111,8 @@
   flex: 0.5;
   justify-content: center;
   align-items: center;
-  width: 478px;
-  height: 525px;
+  /* width: 478px;
+  height: 525px; */
 }
 
 .dami__header-image img {
@@ -120,56 +121,115 @@
   border-radius: 12px;
 }
 
-/* Media Queris */
+/* Media Queries */
 /* Larger Devices  - any size below 1050px will be affected by this query */
 @media screen and (max-width: 1050px) {
-  .gpt3__header {
+  .dami__header {
     flex-direction: column;
   }
-  .gpt3__header-content {
-    margin: 0 0 3rem;
+  .dami__header-content {
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .dami__header-content_fullname div {
+    margin-left: 1rem;
+  }
+
+  .dami__header-content_fullname {
+    align-self: flex-start;
+  }
+  .dami__header-content_description {
+    text-align: right;
+    font-size: 2.8rem;
+    line-height: 6rem;
+  }
+
+  .dami__header-content_description-aboutme {
+    font-size: 1rem;
+    padding: 0;
+    text-align: right;
+    align-self: flex-end;
+  }
+  .dami__header-content__cta {
+    justify-content: flex-end;
+  }
+  .dami__header-content__cta button,
+  .dami__header-content__cta a {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 /* Tablet Devices  - any size below 650px will be affected by this query */
 @media screen and (max-width: 650px) {
-  .gpt3__header h1 {
-    font-size: 48px;
-    line-height: 60px;
+  .dami__header {
+    gap: 3rem;
   }
-  .gpt3__header p {
-    font-size: 16px;
-    line-height: 24px;
+
+  .dami__header-content_fullname div {
+    margin-left: 2rem;
   }
-  .gpt3__header-content__people {
-    flex-direction: column;
+
+  .dami__header-content_description {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 4rem;
+    padding: 0 4rem;
   }
-  .gpt3__header-content__people p {
-    margin: 0;
+
+  .dami__header-content_description-aboutme {
+    text-align: center;
+    align-self: center;
+    padding: 0 2rem;
   }
-  .gpt3__header-content__input input,
-  .gpt3__header-content__input button {
-    font-size: 16px;
-    line-height: 24px;
+  .dami__header-content__cta {
+    justify-content: center;
+  }
+
+  .dami__header-content__empty {
+    width: 100%;
+    background: var(--color-text);
+  }
+  .dami__header-content__cta button,
+  .dami__header-content__cta a {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 /* Mobile Devices  - any size below 490px will be affected by this query */
 @media screen and (max-width: 490px) {
-  .gpt3__header h1 {
-    font-size: 36px;
-    line-height: 48px;
-  }
-  .gpt3__header p {
-    font-size: 14px;
-    line-height: 24px;
+  /* .dami__header {
+    gap: 3rem;
+  } */
+
+  .dami__header-content_fullname div {
+    width: 2rem;
   }
 
-  .gpt3__header-content__input input,
-  .gpt3__header-content__input button {
-    font-size: 12px;
-    line-height: 16px;
+  .dami__header-content_description {
+    /* text-align: center; */
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding: 0 1rem;
   }
 
-  .gpt3__header-content__people p {
-    font-size: 10px;
+  .dami__header-content_description-aboutme {
+    /* padding: 0;
+    text-align: center;
+    align-self: center; */
+    padding: 0;
+  }
+  .dami__header-content__cta {
+    justify-content: center;
+  }
+
+  .dami__header-content__empty {
+    width: 100%;
+    background: var(--color-text);
+  }
+  .dami__header-content__cta button,
+  .dami__header-content__cta a {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
