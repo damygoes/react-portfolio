@@ -1,0 +1,61 @@
+.dami__cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-text-accent);
+}
+
+.dami__cta h4 {
+  font-size: 3rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-bg);
+  /* color: #fff; */
+}
+.dami__cta h4 span {
+  font-family: "Indie Flower", cursive, inter, sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 5rem;
+  transform: skewY(-4deg);
+  animation: magic 5s infinite;
+}
+
+.dami__cta-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.dami__cta-button button {
+  padding: 0.5rem 1rem;
+  color: var(--color-bg);
+  background: transparent;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-bg);
+  outline: none;
+  cursor: pointer;
+  margin: 0 2rem;
+  min-width: 8.2rem;
+  min-height: 3.2rem;
+}
+
+@keyframes magic {
+  0%,
+  39%,
+  41%,
+  59%,
+  61%,
+  100% {
+    text-shadow: #fff 0 0 12px, #4338ca 0 0 24px, #4338ca 0 0 36px;
+  }
+
+  40%,
+  60% {
+    text-shadow: none;
+  } /* this creates a small flicker effect */
+}

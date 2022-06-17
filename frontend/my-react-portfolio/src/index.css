@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
 :root {
   --font-family: "Inter", sans-serif;
   --color-bg: #eef2ff;
-  --color-text: #6b7280;
+  --color-text: #1f2937;
   --color-subtext: #4338ca;
   --color-button: #3730a3;
   --color-accent: #818cf8;
+  --color-text-accent: #6b7280;
 }

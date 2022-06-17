@@ -1,0 +1,122 @@
+.dami__projectcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 1rem 0rem;
+  border: 1px solid var(--color-text-accent);
+  background-color: var(--color-bg);
+  cursor: pointer;
+}
+
+.dami__projectcard-image {
+  display: flex;
+  /* flex: 1; */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.dami__projectcard-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.dami__projectcard-content_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0.8;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.dami__projectcard-content_bottom h4 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.dami__projectcard-content_bottom p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: left;
+  color: var(--color-text-accent);
+}
+
+.dami__projectcard-content_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding: 0.5rem 0rem;
+  margin-top: 1rem;
+}
+
+.dami__projectcard-content_links div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+/* Conditional Class */
+.comingSoon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 1rem 0rem;
+  border: 1px solid var(--color-text-accent);
+  background-color: var(--color-bg);
+  cursor: pointer;
+  position: relative;
+}
+.comingSoon::after {
+  content: "Coming Soon";
+  color: var(--color-button);
+  border: none;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backdrop-filter: blur(25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Queries */
+/* Larger Devices  - any size below 1050px will be affected by this query */
+@media screen and (max-width: 1050px) {
+}
+/* Tablet Devices  - any size below 650px will be affected by this query */
+@media screen and (max-width: 650px) {
+}
+/* Mobile Devices  - any size below 490px will be affected by this query */
+@media screen and (max-width: 490px) {
+  .dami__projectcard-content_bottom h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}

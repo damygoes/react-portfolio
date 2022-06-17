@@ -40,7 +40,7 @@
   font-weight: 700;
   font-size: 3rem;
   line-height: 6rem;
-  color: #1f2937;
+  color: var(--color-text-accent);
   text-transform: capitalize;
   margin: 1.5rem 0 2rem 0;
 }
@@ -119,6 +119,119 @@
   width: 100%;
   height: 100%;
   border-radius: 12px;
+}
+
+/* Media Queries */
+/* Larger Devices  - any size below 1050px will be affected by this query */
+@media screen and (max-width: 1050px) {
+  .dami__header {
+    flex-direction: column;
+  }
+  .dami__header-content {
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .dami__header-content_fullname div {
+    margin-left: 1rem;
+  }
+
+  .dami__header-content_fullname {
+    align-self: flex-start;
+  }
+  .dami__header-content_description {
+    text-align: right;
+    font-size: 2.8rem;
+    line-height: 6rem;
+  }
+
+  .dami__header-content_description-aboutme {
+    font-size: 1rem;
+    padding: 0;
+    text-align: right;
+    align-self: flex-end;
+  }
+  .dami__header-content__cta {
+    justify-content: flex-end;
+  }
+  .dami__header-content__cta button,
+  .dami__header-content__cta a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+/* Tablet Devices  - any size below 650px will be affected by this query */
+@media screen and (max-width: 650px) {
+  .dami__header {
+    gap: 3rem;
+  }
+
+  .dami__header-content_fullname div {
+    margin-left: 2rem;
+  }
+
+  .dami__header-content_description {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 4rem;
+    padding: 0 4rem;
+  }
+
+  .dami__header-content_description-aboutme {
+    text-align: center;
+    align-self: center;
+    padding: 0 2rem;
+  }
+  .dami__header-content__cta {
+    justify-content: center;
+  }
+
+  .dami__header-content__empty {
+    width: 100%;
+    background: var(--color-text);
+  }
+  .dami__header-content__cta button,
+  .dami__header-content__cta a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+/* Mobile Devices  - any size below 490px will be affected by this query */
+@media screen and (max-width: 490px) {
+  /* .dami__header {
+    gap: 3rem;
+  } */
+
+  .dami__header-content_fullname div {
+    width: 2rem;
+  }
+
+  .dami__header-content_description {
+    /* text-align: center; */
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+  }
+
+  .dami__header-content_description-aboutme {
+    /* padding: 0;
+    text-align: center;
+    align-self: center; */
+    padding: 0;
+  }
+  .dami__header-content__cta {
+    justify-content: center;
+  }
+
+  .dami__header-content__empty {
+    width: 100%;
+    background: var(--color-text);
+  }
+  .dami__header-content__cta button,
+  .dami__header-content__cta a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 /* Media Queries */

@@ -1,0 +1,64 @@
+.dami__projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.dami__projects-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.dami__projects-head div {
+  width: 12rem;
+  height: 0;
+  margin-left: 2rem;
+  background-color: var(--color-subtext);
+  border: 1px solid var(--color-button);
+}
+
+.dami__projects-head h3 {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.dami__projects-body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+}
+
+/* Media Queries */
+/* Larger Devices  - any size below 1050px will be affected by this query */
+@media screen and (max-width: 1050px) {
+  .dami__projects-body {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Tablet Devices  - any size below 650px will be affected by this query */
+@media screen and (max-width: 650px) {
+}
+/* Mobile Devices  - any size below 490px will be affected by this query */
+@media screen and (max-width: 490px) {
+  .dami__projects-head div {
+    width: 8rem;
+    margin-left: 1.5rem;
+  }
+
+  .dami__projects-head h3 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+}
