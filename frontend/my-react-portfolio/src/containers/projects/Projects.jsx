@@ -4,10 +4,7 @@ import "./projects.css";
 
 const Projects = () => {
   return (
-    <div
-      id="projects"
-      className="dami__projects section__padding section__margin"
-    >
+    <div id="projects" className="dami__projects section__padding">
       <div className="dami__projects-head">
         <h3>My recent projects</h3>
         <div></div>

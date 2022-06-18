@@ -1,0 +1,76 @@
+.dami__blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.dami__blog-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.dami__blog-head div {
+  width: 12rem;
+  height: 0;
+  margin-right: 2rem;
+  background-color: var(--color-subtext);
+  border: 1px solid var(--color-button);
+}
+
+.dami__blog-head h3 {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.dami__blog-body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+}
+
+/* Media Queries */
+/* Larger Devices  - any size below 1050px will be affected by this query */
+@media screen and (max-width: 1050px) {
+  .dami__blog,
+  .dami__blog-body {
+    gap: 1rem;
+  }
+}
+/* Tablet Devices  - any size below 650px will be affected by this query */
+@media screen and (max-width: 650px) {
+  .dami__blog {
+    gap: 0rem;
+  }
+
+  .dami__blog-head div {
+    width: 9rem;
+    margin-right: 2rem;
+  }
+
+  .dami__blog-head h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+/* Mobile Devices  - any size below 490px will be affected by this query */
+@media screen and (max-width: 490px) {
+  .dami__blog-head div {
+    width: 5rem;
+  }
+
+  .dami__blog-head h3 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+}

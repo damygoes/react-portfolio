@@ -1,11 +1,12 @@
 .dami__projectcard {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 1rem;
   border-radius: 12px;
   margin: 1rem 0rem;
+  width: 28rem;
   border: 1px solid var(--color-text-accent);
   background-color: var(--color-bg);
   cursor: pointer;
@@ -13,7 +14,6 @@
 
 .dami__projectcard-image {
   display: flex;
-  /* flex: 1; */
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
@@ -30,15 +30,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex: 0.8;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 0rem 0.5rem;
 }
 
 .dami__projectcard-content_bottom h4 {
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 3rem;
   color: var(--color-text);
   margin-bottom: 1rem;
@@ -70,16 +70,22 @@
   justify-content: flex-end;
   gap: 1rem;
 }
+.dami__projectcard-content_links div a {
+  padding: 0 1rem;
+  border-radius: 50px;
+  border: 1px solid var(--color-text-accent);
+}
 
 /* Conditional Class */
 .comingSoon {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 1rem;
   border-radius: 12px;
   margin: 1rem 0rem;
+  width: 28rem;
   border: 1px solid var(--color-text-accent);
   background-color: var(--color-bg);
   cursor: pointer;
@@ -115,8 +121,25 @@
 }
 /* Mobile Devices  - any size below 490px will be affected by this query */
 @media screen and (max-width: 490px) {
+  .dami__projectcard,
+  .comingSoon {
+    width: 20rem;
+  }
+
   .dami__projectcard-content_bottom h4 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+  }
+
+  .dami__projectcard-content_links {
+    font-size: 0.8rem;
+    line-height: 2rem;
+  }
+
+  .dami__projectcard-content_links div {
+    gap: 0.5rem;
+  }
+  .dami__projectcard-content_links div a {
+    padding: 0 0.7rem;
   }
 }

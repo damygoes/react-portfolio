@@ -40,6 +40,26 @@ const projects = [
     description: "Activity app built using React, REST API, and Bootstrap",
     image:
       "https://images.unsplash.com/photo-1587480335344-95513e5cf3b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvamVjdHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+    isDone: true,
+    deployed: "https://www.google.com",
+    github: "https://github.com/damygoes",
+  },
+  {
+    id: "005",
+    title: "Activate",
+    description: "Activity app built using React, REST API, and Bootstrap",
+    image:
+      "https://images.unsplash.com/photo-1587480335344-95513e5cf3b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvamVjdHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+    isDone: true,
+    deployed: "https://www.google.com",
+    github: "https://github.com/damygoes",
+  },
+  {
+    id: "006",
+    title: "Activate",
+    description: "Activity app built using React, REST API, and Bootstrap",
+    image:
+      "https://images.unsplash.com/photo-1587480335344-95513e5cf3b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvamVjdHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
     isDone: false,
     deployed: "https://www.google.com",
     github: "https://github.com/damygoes",

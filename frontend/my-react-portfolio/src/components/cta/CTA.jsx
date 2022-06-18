@@ -5,7 +5,7 @@ const CTA = () => {
   return (
     <div id="cta" className="dami__cta section__padding">
       <h4>
-        Let's create <span>magic</span> together
+        Together we can create <span>magic!</span>
       </h4>
       <div className="dami__cta-button">
         <button type="button">Contact</button>
