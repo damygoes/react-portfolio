@@ -3,8 +3,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem;
-  margin-bottom: 3rem;
+  width: 100vw;
+  height: 10vh;
+  margin: 0;
+  top: 0;
+  left: 0;
   background-color: var(--color-bg);
+  position: fixed;
+  z-index: 999;
 }
 
 .dami__navbar-links {

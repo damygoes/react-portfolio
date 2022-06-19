@@ -1,0 +1,23 @@
+.dami__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.dami__footer-empty {
+  width: 100%;
+  border: 1px solid var(--color-text-accent);
+  margin-bottom: 0.5rem;
+}
+
+.dami__footer-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  color: var(--color-subtext);
+}

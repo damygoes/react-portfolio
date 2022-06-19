@@ -12,6 +12,7 @@
   justify-content: flex-start;
   width: 100%;
   margin-bottom: 5rem;
+  margin-top: 16rem;
 }
 
 .dami__blog-head div {
@@ -37,6 +38,7 @@
   flex-wrap: wrap;
   width: 100%;
   gap: 2rem;
+  margin-bottom: 5rem;
 }
 
 /* Media Queries */

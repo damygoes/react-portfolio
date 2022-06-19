@@ -6,10 +6,7 @@ import "./contact.css";
 
 const Contact = () => {
   return (
-    <div
-      id="contact"
-      className="dami__contact section__padding section__margin"
-    >
+    <div className="dami__contact section__padding section__margin">
       <div className="dami__contact-head">
         <h4>let's chat</h4>
         <p>

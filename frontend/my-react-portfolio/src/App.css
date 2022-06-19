@@ -10,6 +10,9 @@ body {
   background: var(--color-bg);
   font-family: var(--font-family);
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 a {
   color: unset;
@@ -32,9 +35,12 @@ a:hover {
   margin: 4rem 6rem;
 }
 
-.full__page {
+.App__skillscta,
+.App__contact {
   height: 100vh;
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* you can create custom css animations using this tool - www.animista.net */

@@ -12,7 +12,7 @@ import "./skills.css";
 
 const Skills = () => {
   return (
-    <div id="skills" className="dami__skills section__padding section__margin">
+    <div className="dami__skills section__padding section__margin">
       <div className="dami__skills-title">
         <h3>Skills</h3>
         <p>I use these tools to bring my ideas to reality. </p>
